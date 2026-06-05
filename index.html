@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BPE Wallet - The world's most advanced sports trading and betting platform. Premium, secure, and lightning fast.">
+  <title>BPE Wallet | Elite Sports Trading</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scripts -->
+  <script>
+    const APP_CONFIG = {
+      name: "BPE Wallet",
+      apkUrl: "" // I will add the new APK URL here once you provide it
+    };
+
+    function updateDownloadLinks() {
+      const downloadButtons = document.querySelectorAll('.apk-download-btn');
+      downloadButtons.forEach(btn => {
+        btn.href = APP_CONFIG.apkUrl;
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', updateDownloadLinks);
+  </script>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-bar glass">
+        <div class="logo-group">
+          <img src="betpro_app_icon.png" alt="Logo" class="nav-logo">
+          <span class="nav-title">BPE <span class="text-emerald">Wallet</span></span>
+        </div>
+        <div class="nav-right">
+          <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+          </nav>
+          <a href="#download" class="apk-download-btn btn-emerald btn-small">Download APK</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-bg-blur top-left"></div>
+    <div class="hero-bg-blur bottom-right"></div>
+
+    <div class="container text-center hero-content">
+      <div class="badge animate-bounce">
+        <span class="badge-dot"></span>
+        <span>Version 3.0 is Live</span>
+      </div>
+
+      <h1 class="hero-title">
+        THE NEXT <br />
+        <span class="text-emerald">GENERATION</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Elite sports trading meets state-of-the-art security. Experience the world's most advanced platform.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="apk-download-btn btn-emerald btn-large">
+          Download App
+        </a>
+      </div>
+
+      <!-- App Mockup Preview -->
+      <div class="app-mockup">
+        <div class="mesh-gradient mockup-glow animate-pulse-slow"></div>
+        <div class="premium-card mockup-card">
+          <div class="mockup-screen mesh-gradient">
+            <img src="betpro_app_icon.png" class="mockup-logo animate-pulse" alt="App Logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="text-center section-header">
+        <h3 class="section-subtitle">Excellence Guaranteed</h3>
+        <h2 class="section-title">ELITE FEATURES</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="premium-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h4 class="feature-title">Ultra Secure</h4>
+          <p class="feature-desc">Military-grade encryption protecting every single transaction and user detail.</p>
+        </div>
+
+        <div class="premium-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h4 class="feature-title">Instant Flow</h4>
+          <p class="feature-desc">Lightning-fast deposits and withdrawals. No waiting, just trading.</p>
+        </div>
+
+        <div class="premium-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h4 class="feature-title">24/7 Support</h4>
+          <p class="feature-desc">Dedicated elite support agents available around the clock for your assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section id="download" class="download-section">
+    <div class="download-container">
+      <div class="mesh-gradient download-wrapper">
+        <div class="download-content">
+          <div class="download-glow"></div>
+          <div class="relative z-10">
+            <h2 class="download-title">GET THE APP NOW</h2>
+            <p class="download-desc">
+              Join thousands of professional traders on the most trusted platform in the world.
+            </p>
+            <a href="#" class="apk-download-btn btn-emerald btn-massive">
+              Download for Android
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="betpro_app_icon.png" alt="Logo" class="footer-icon">
+        <span class="footer-title">BPE <span class="text-emerald-muted">Wallet</span></span>
+      </div>
+      <div class="footer-copyright">
+        © 2026 BPE WALLET. THE ELITE TRADING EXPERIENCE.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
