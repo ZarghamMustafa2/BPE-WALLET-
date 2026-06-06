@@ -181,9 +181,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('mock-deposit')?.addEventListener('click', () => {
-        balance += 500;
+        const depositAmount = 500;
+        const bonusAmount = depositAmount * 0.10;
+        balance += depositAmount + bonusAmount;
         updateBalanceDisplay();
-        showToast('Instant Deposit of $500.00 successful');
+        showToast(`Instant Deposit of $${depositAmount.toFixed(2)} + 10% Bonus ($${bonusAmount.toFixed(2)}) successful`);
     });
 
     document.getElementById('mock-withdraw')?.addEventListener('click', () => {
