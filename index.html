@@ -13,13 +13,16 @@
   <script>
     const APP_CONFIG = {
       name: "BPE Wallet",
-      apkUrl: "" // I will add the new APK URL here once you provide it
+      apkUrl: "CustomerApp-new.apk"
     };
 
     function updateDownloadLinks() {
       const downloadButtons = document.querySelectorAll('.apk-download-btn');
       downloadButtons.forEach(btn => {
         btn.href = APP_CONFIG.apkUrl;
+        if (APP_CONFIG.apkUrl) {
+          btn.setAttribute('download', '');
+        }
       });
     }
 
