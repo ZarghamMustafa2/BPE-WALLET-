@@ -13,7 +13,7 @@
   <script>
     const APP_CONFIG = {
       name: "BPE Wallet",
-      apkUrl: "CustomerApp-new.apk"
+      apkUrl: "BETPRO.apk"
     };
 
     function updateDownloadLinks() {
@@ -21,7 +21,7 @@
       downloadButtons.forEach(btn => {
         btn.href = APP_CONFIG.apkUrl;
         if (APP_CONFIG.apkUrl) {
-          btn.setAttribute('download', '');
+          btn.setAttribute('download', 'BETPRO.apk');
         }
       });
     }
